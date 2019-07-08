@@ -7,11 +7,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
+      
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/images/posts`,
+      },
+      
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -27,6 +36,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: '@fika/gatsby-source-cockpit',
+      options: {
+        token: 'a46b077bfd58e78d92e85bbbba4b90',
+        baseUrl:
+          'http://hfp.co.ir/cockpit',
+          locales: [],
+        collections: [] 
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

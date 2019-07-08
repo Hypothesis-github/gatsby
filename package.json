@@ -5,8 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fika/gatsby-source-cockpit": "^1.0.16",
+    "apollo-fetch": "^0.7.0",
     "gatsby": "^2.3.5",
     "gatsby-image": "^2.0.37",
+    "gatsby-plugin-cockpit": "^1.0.39",
     "gatsby-plugin-manifest": "^2.0.26",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
